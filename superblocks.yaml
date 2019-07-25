@@ -1,8 +1,7 @@
-patata job:
+patata-job:
  image: node
  script:
    - npm install truffle
    - npm install
-   - ./node_modules/.bin/truffle compile
-   - ./node_modules/.bin/truffle test
- branch: master
+   - npx truffle compile
+   - npx truffle test
