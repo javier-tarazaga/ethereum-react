@@ -5,3 +5,4 @@ patata-job:
    - npm install
    - npx truffle compile
    - npx truffle test
+ branch: master
