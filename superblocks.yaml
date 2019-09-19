@@ -1,0 +1,20 @@
+version: 1
+jobs:
+  build:
+    image: node
+    script:
+    - npm i
+    - npm run build
+  test:
+    image: node
+    script:
+    - npm i
+    - npm run test
+
+stages:
+  - build:
+      jobs:
+        - build
+  - test:
+      jobs:
+        - test
